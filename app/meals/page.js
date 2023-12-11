@@ -1,8 +1,13 @@
 import React, { Suspense } from 'react'
 import styles from "./page.module.css"
 import Link from 'next/link'
-import MealsGrid from '../components/Meal/meals-grid/meals-grid'
 import { getMeals } from '@/lib/meals'
+import MealsGrid from '@/components/Meal/meals-grid/meals-grid'
+
+export const metadata = {
+  title: 'All Meals',
+  description: 'Broswe the delicious meals, shared by a our vibrant community.',
+};
 
 const MealsPage = () => {
   return (
